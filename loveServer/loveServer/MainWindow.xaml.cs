@@ -33,6 +33,7 @@ namespace loveServer
         public MainWindow()
         {
             InitializeComponent();
+            MessageBox.Show("Test");
         }
 
     }
