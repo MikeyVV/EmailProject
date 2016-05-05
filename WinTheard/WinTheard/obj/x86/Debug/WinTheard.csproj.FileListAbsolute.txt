@@ -1,0 +1,17 @@
+D:\c#\WinTheard\WinTheard\bin\Debug\WinTheard.exe
+D:\c#\WinTheard\WinTheard\bin\Debug\WinTheard.pdb
+D:\c#\WinTheard\WinTheard\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\c#\WinTheard\WinTheard\obj\x86\Debug\WinTheard.Form1.resources
+D:\c#\WinTheard\WinTheard\obj\x86\Debug\WinTheard.Properties.Resources.resources
+D:\c#\WinTheard\WinTheard\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\c#\WinTheard\WinTheard\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\c#\WinTheard\WinTheard\obj\x86\Debug\WinTheard.exe
+D:\c#\WinTheard\WinTheard\obj\x86\Debug\WinTheard.pdb
+C:\Users\HatsuneMiku\Downloads\WinTheard\WinTheard\obj\x86\Debug\WinTheard.exe
+C:\Users\HatsuneMiku\Downloads\WinTheard\WinTheard\obj\x86\Debug\WinTheard.pdb
+C:\Users\HatsuneMiku\Downloads\WinTheard\WinTheard\bin\Debug\WinTheard.exe
+C:\Users\HatsuneMiku\Downloads\WinTheard\WinTheard\bin\Debug\WinTheard.pdb
+C:\Users\HatsuneMiku\Downloads\WinTheard\WinTheard\obj\x86\Debug\WinTheard.csprojResolveAssemblyReference.cache
+C:\Users\HatsuneMiku\Downloads\WinTheard\WinTheard\obj\x86\Debug\WinTheard.Form1.resources
+C:\Users\HatsuneMiku\Downloads\WinTheard\WinTheard\obj\x86\Debug\WinTheard.Properties.Resources.resources
+C:\Users\HatsuneMiku\Downloads\WinTheard\WinTheard\obj\x86\Debug\WinTheard.csproj.GenerateResource.Cache
