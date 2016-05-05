@@ -1,0 +1,15 @@
+C:\Users\dell\Google Drive\Computer Networks\mailServer\loveServer\loveServer\bin\Debug\loveServer.exe.config
+C:\Users\dell\Google Drive\Computer Networks\mailServer\loveServer\loveServer\bin\Debug\loveServer.exe
+C:\Users\dell\Google Drive\Computer Networks\mailServer\loveServer\loveServer\bin\Debug\loveServer.pdb
+C:\Users\dell\Google Drive\Computer Networks\mailServer\loveServer\loveServer\obj\Debug\loveServer.csprojResolveAssemblyReference.cache
+C:\Users\dell\Google Drive\Computer Networks\mailServer\loveServer\loveServer\obj\Debug\App.g.cs
+C:\Users\dell\Google Drive\Computer Networks\mailServer\loveServer\loveServer\obj\Debug\loveServer_MarkupCompile.cache
+C:\Users\dell\Google Drive\Computer Networks\mailServer\loveServer\loveServer\obj\Debug\loveServer_MarkupCompile.lref
+C:\Users\dell\Google Drive\Computer Networks\mailServer\loveServer\loveServer\obj\Debug\loveServer.g.resources
+C:\Users\dell\Google Drive\Computer Networks\mailServer\loveServer\loveServer\obj\Debug\loveServer.Properties.Resources.resources
+C:\Users\dell\Google Drive\Computer Networks\mailServer\loveServer\loveServer\obj\Debug\loveServer.csproj.GenerateResource.Cache
+C:\Users\dell\Google Drive\Computer Networks\mailServer\loveServer\loveServer\obj\Debug\loveServer.exe
+C:\Users\dell\Google Drive\Computer Networks\mailServer\loveServer\loveServer\obj\Debug\loveServer.pdb
+C:\Users\dell\Google Drive\Computer Networks\mailServer\loveServer\loveServer\bin\Debug\MySql.Data.dll
+C:\Users\dell\Google Drive\Computer Networks\mailServer\loveServer\loveServer\obj\Debug\MainWindow.g.cs
+C:\Users\dell\Google Drive\Computer Networks\mailServer\loveServer\loveServer\obj\Debug\MainWindow.baml
