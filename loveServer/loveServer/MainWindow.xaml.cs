@@ -29,32 +29,11 @@ namespace loveServer
 
     public partial class MainWindow : Window
     {
-        public delegate void delUpdateUITextBox(string text);
 
-        ThreadStart threadStart;
-        Thread myUpdateThread;
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void Window_Loaded(object sender, EventArgs e)
-        {
-            threadStart = new ThreadStart(GetTheThreadStarted);
-            myUpdateThread = new Thread(threadStart);
-            myUpdateThread.Name = "Seconed Thread";
-            myUpdateThread.Start();
-        }
-
-        private void GetTheThreadStarted()
-        {
-            delUpdateUITextBox DelUpdateUITextBox = new delUpdateUITextBox(UpdateUITeaxtBox);
-            this.BeginInvoke(DelUpdateUITextBox, "I was update" + myUpdateThread.Name);
-        }
-
-        public void UpdateUITeaxtBox(string textBoxString)
-        {
-            this.status.Content = textBoxString;
-        }
     }
 }

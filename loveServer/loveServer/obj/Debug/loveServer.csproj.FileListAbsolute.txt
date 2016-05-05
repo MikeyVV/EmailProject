@@ -13,3 +13,6 @@ C:\Users\dell\Google Drive\Computer Networks\mailServer\loveServer\loveServer\ob
 C:\Users\dell\Google Drive\Computer Networks\mailServer\loveServer\loveServer\bin\Debug\MySql.Data.dll
 C:\Users\dell\Google Drive\Computer Networks\mailServer\loveServer\loveServer\obj\Debug\MainWindow.g.cs
 C:\Users\dell\Google Drive\Computer Networks\mailServer\loveServer\loveServer\obj\Debug\MainWindow.baml
+D:\Documents\GitHub\EmailProject\loveServer\loveServer\bin\Debug\loveServer.exe.config
+D:\Documents\GitHub\EmailProject\loveServer\loveServer\obj\Debug\loveServer.exe
+D:\Documents\GitHub\EmailProject\loveServer\loveServer\obj\Debug\loveServer.pdb
