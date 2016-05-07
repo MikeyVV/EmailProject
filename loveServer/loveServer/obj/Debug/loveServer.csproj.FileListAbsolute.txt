@@ -24,3 +24,10 @@ D:\Documents\GitHub\EmailProject\loveServer\loveServer\obj\Debug\MainWindow.g.cs
 D:\Documents\GitHub\EmailProject\loveServer\loveServer\obj\Debug\App.g.cs
 D:\Documents\GitHub\EmailProject\loveServer\loveServer\obj\Debug\loveServer_MarkupCompile.cache
 D:\Documents\GitHub\EmailProject\loveServer\loveServer\obj\Debug\loveServer_MarkupCompile.lref
+D:\Documents\GitHub\EmailProject\loveServer\loveServer\bin\Debug\loveServer.exe
+D:\Documents\GitHub\EmailProject\loveServer\loveServer\bin\Debug\loveServer.pdb
+D:\Documents\GitHub\EmailProject\loveServer\loveServer\bin\Debug\MySql.Data.dll
+D:\Documents\GitHub\EmailProject\loveServer\loveServer\obj\Debug\MainWindow.baml
+D:\Documents\GitHub\EmailProject\loveServer\loveServer\obj\Debug\loveServer.g.resources
+D:\Documents\GitHub\EmailProject\loveServer\loveServer\obj\Debug\loveServer.Properties.Resources.resources
+D:\Documents\GitHub\EmailProject\loveServer\loveServer\obj\Debug\loveServer.csproj.GenerateResource.Cache
