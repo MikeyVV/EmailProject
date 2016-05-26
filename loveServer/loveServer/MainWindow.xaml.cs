@@ -24,6 +24,8 @@ namespace loveServer
             Dispatcher.CheckAccess();
         }
     }*/
+
+    //Email full form
     public class Email
     {
         public string id;
@@ -62,7 +64,7 @@ namespace loveServer
             "server=176.32.230.43;uid=cl58-mikeyvv;pwd=JtXzgj4sz;database=cl58-mikeyvv;";
 
         private string naxServerConnectionString =
-            "server=172.20.10.2;uid=bank;pwd=p@ssw0rd;database=mailbox;";
+            "server=192.168.43.244;uid=nax;pwd=1234;database=naxserver;";
 
         public MainWindow()
         {
@@ -253,8 +255,8 @@ namespace loveServer
 
         private void UpdateStatus(string st)
         {
-            Color color = new Color();
-            Color color2 = new Color();
+            /*Color color = new Color();
+            Color color2 = new Color();*/
 
             if (!Dispatcher.CheckAccess())
             {
@@ -283,8 +285,8 @@ namespace loveServer
 
         private void UpdateStatus2(string st)
         {
-            Color color = new Color();
-            Color color2 = new Color();
+            /*Color color = new Color();
+            Color color2 = new Color();*/
             if (!Dispatcher.CheckAccess())
             {
                 Dispatcher.BeginInvoke(new UpSt2(UpdateStatus2), new object[] {st});
