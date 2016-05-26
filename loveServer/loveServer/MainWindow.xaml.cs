@@ -17,13 +17,6 @@ namespace loveServer
     /// <summary>
     ///     Interaction logic for MainWindow.xaml
     /// </summary>
-    /*public class dsp
-    {
-        void disp()
-        {
-            Dispatcher.CheckAccess();
-        }
-    }*/
 
     //Email full form
     public class Email
@@ -101,7 +94,6 @@ namespace loveServer
                     try
                     {
                         cmd = new MySqlCommand(queryString, con);
-                        //cmd2 = new MySqlCommand(queryString, con);
                         reader = cmd.ExecuteReader(); //MikeyServer
                     }
                     catch (Exception)
@@ -123,16 +115,16 @@ namespace loveServer
                         queryString = "INSERT INTO `mailbox`( `header`, `from`, `to`, `message`) VALUES ('" +
                                       email.header + "','" +
                                       email.from + "','" + email.to + "','" + email.message + "')";
-                        
-                        cmd2 = new MySqlCommand(queryString,con2);
+
+                        cmd2 = new MySqlCommand(queryString, con2);
                         if (con2.State == ConnectionState.Open) con2.Close();
                         if (con2.State != ConnectionState.Open) con2.Open();
                         cmd2.ExecuteNonQuery();
                         con2.Close();
-  
+
                         queryString = "DELETE FROM `mailbox2` WHERE `id`=" + email.id;
-                        
-                        //if (con.State == ConnectionState.Open) con.Close();
+
+
                         cmd3 = new MySqlCommand(queryString, con);
                         if (con.State == ConnectionState.Open) con.Close();
                         if (con.State != ConnectionState.Open) con.Open();
@@ -165,14 +157,13 @@ namespace loveServer
             bool lost = false;
             while (true)
             {
-                //   int i = 0;
                 try
                 {
-                    //if (con.State != ConnectionState.Open) con.Open();
                     con.Open();
                     UpdateStatus(". . . Working . . .");
                     lost = false;
                     database = true;
+                    //checking connection
                     while (!lost)
                     {
                         MySqlConnection isAliveConnection = new MySqlConnection();
@@ -183,23 +174,17 @@ namespace loveServer
                             isAliveConnection.Open();
                             lost = false;
                             isAliveConnection.Close();
-                            //Thread.Sleep(1000);
                         }
                         catch (Exception)
                         {
-                            lost = true;
+                            lost = true; //if connection lost call con to reconecting
                         }
-
-                        /*UpdateStatus(con.State.ToString()+" "+i++);
-                        Thread.Sleep(2000);
-                        con.Open();*/
                     }
-                    //con.Close();
                 }
                 catch (Exception)
                 {
                     UpdateStatus("Connection Lost.");
-                    //Thread.Sleep(1000);
+
                     UpdateStatus(". . . Connecting . . .");
                     con.Close();
                 }
@@ -212,14 +197,13 @@ namespace loveServer
             bool lost = false;
             while (true)
             {
-                //   int i = 0;
                 try
                 {
-                    //if (con2.State != ConnectionState.Open) con2.Open();
                     con2.Open();
                     UpdateStatus2(". . . Working . . .");
                     lost = false;
                     database2 = true;
+                    //checking connection
                     while (!lost)
                     {
                         MySqlConnection isAliveConnection = new MySqlConnection();
@@ -230,23 +214,17 @@ namespace loveServer
                             isAliveConnection.Open();
                             lost = false;
                             isAliveConnection.Close();
-                            //Thread.Sleep(1000);
                         }
                         catch (Exception)
                         {
-                            lost = true;
+                            lost = true; //if connection lost call con2 to reconecting
                         }
-
-                        /*UpdateStatus(con.State.ToString()+" "+i++);
-                        Thread.Sleep(2000);
-                        con.Open();*/
                     }
-                    //con.Close();
                 }
                 catch (Exception)
                 {
                     UpdateStatus2("Connection Lost.");
-                    //Thread.Sleep(1000);
+
                     UpdateStatus2(". . . Connecting . . .");
                     con2.Close();
                 }
@@ -255,62 +233,22 @@ namespace loveServer
 
         private void UpdateStatus(string st)
         {
-            /*Color color = new Color();
-            Color color2 = new Color();*/
-
             if (!Dispatcher.CheckAccess())
             {
-                Dispatcher.BeginInvoke(new UpSt(UpdateStatus), new object[] {st});
+                Dispatcher.BeginInvoke(new UpSt(UpdateStatus), new object[] {st}); //update GUI
                 return;
             }
             status.Content = st;
-            /*if (st == ". . . Working . . .")
-            {
-                color = (Color) ColorConverter.ConvertFromString("#FF639FBB");
-                color2 = (Color) ColorConverter.ConvertFromString("#FF00D8BB");
-            }
-            else if (st == "Connection Lost.")
-            {
-                color = (Color) ColorConverter.ConvertFromString("Black");
-                color2 = (Color) ColorConverter.ConvertFromString("#FF767676");
-            }
-            else
-            {
-                color = (Color) ColorConverter.ConvertFromString("Black");
-                color2 = (Color) ColorConverter.ConvertFromString("#FF3653A2");
-            }
-            G_1.Color = color;
-            G_2.Color = color2;*/
         }
 
         private void UpdateStatus2(string st)
         {
-            /*Color color = new Color();
-            Color color2 = new Color();*/
             if (!Dispatcher.CheckAccess())
             {
-                Dispatcher.BeginInvoke(new UpSt2(UpdateStatus2), new object[] {st});
+                Dispatcher.BeginInvoke(new UpSt2(UpdateStatus2), new object[] {st}); //update GUI
                 return;
             }
             status2.Content = st;
-            //Dispatcher.BeginInvokeShutdown(DispatcherPriority.Normal);
-            /*if (st == ". . . Working . . .")
-            {
-                color = (Color) ColorConverter.ConvertFromString("#FF639FBB");
-                color2 = (Color) ColorConverter.ConvertFromString("#FF00D8BB");
-            }
-            else if (st == "Connection Lost.")
-            {
-                color = (Color) ColorConverter.ConvertFromString("Black");
-                color2 = (Color) ColorConverter.ConvertFromString("#FF767676");
-            }
-            else
-            {
-                color = (Color) ColorConverter.ConvertFromString("Black");
-                color2 = (Color) ColorConverter.ConvertFromString("#FF3653A2");
-            }
-            G_1.Color = color;
-            G_2.Color = color2;*/
         }
     }
 }
