@@ -184,7 +184,6 @@ namespace loveServer
                 catch (Exception)
                 {
                     UpdateStatus("Connection Lost.");
-
                     UpdateStatus(". . . Connecting . . .");
                     con.Close();
                 }
@@ -203,7 +202,7 @@ namespace loveServer
                     UpdateStatus2(". . . Working . . .");
                     lost = false;
                     database2 = true;
-                    //checking connection
+                    //checking connection/
                     while (!lost)
                     {
                         MySqlConnection isAliveConnection = new MySqlConnection();
